@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7ebed1ad;
+  }
+  
+  header {
+    background-color: #2c7930be;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  section {
+    background-color: rgba(248, 245, 245, 0.61);
+    padding: 1rem;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(53, 172, 16, 0.616);
+  }
+  
+  canvas {
+    max-width: 100%;
+  }

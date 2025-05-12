@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crop Monitoring System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Crop Monitoring Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="weather">
+      <h2>Weather Forecast</h2>
+      <input type="text" id="cityInput" placeholder="Enter city" />
+      <button onclick="getWeather()">Get Weather</button>
+      <div id="weatherDisplay"></div>
+    </section>
+
+    <section class="sensor">
+      <h2>Real-Time Sensor Data</h2>
+      <div id="sensorData">
+        <p>Temperature: <span id="temp">--</span> °C</p>
+        <p>Soil Moisture: <span id="moisture">--</span> %</p>
+        <p>Humidity: <span id="humidity">--</span> %</p>
+      </div>
+    </section>
+
+    <section class="analytics">
+      <h2>Crop Health Analytics</h2>
+      <canvas id="healthChart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="pest">
+      <form id="pestForm" enctype="multipart/form-data">
+        <input type="file" id="imageInput" name="image" accept="image/*" />
+        <button type="submit">Upload</button>
+      </form>
+      <div id="pestResult"></div>
+      
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
